@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provide us Feedback</title>
+
+    <style type="text/css">
+        table, th, td{
+            border: 2px solid rgb(245, 4, 245);
+            border-spacing: 8px;
+        }
+</style>
+
+<link rel = "shortcut icon"  href = "Images/logo.png" />
+
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCJexFDly9gjVMiiB1oKko5ifQdL5lv8Y8",
+    authDomain: "laptop---website-2e25b.firebaseapp.com",
+    databaseURL: "https://laptop---website-2e25b.firebaseio.com",
+    projectId: "laptop---website-2e25b",
+    storageBucket: "laptop---website-2e25b.appspot.com",
+    messagingSenderId: "1019169519474",
+    appId: "1:1019169519474:web:64b02803e82a24b9ae0feb"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  console.log(firebase);
+  var database = firebase.database();
+  var refer = database.ref('Feedback');
+
+</script>
+
+
+</head>
+<body>
+    <table>      
+        <tr>
+            <td><a  href = "Main.html">Home</a></td> 
+            <td><a  href = "AboutUs.html">About Us</a></td>
+            <td>&nbsp &nbsp <a href="Laptop.html">Laptops</a> &nbsp &nbsp &nbsp </td>    
+            <td><a href = "QualityProduct.html">Quality Product</a></td>
+            <td><a href="givefeedback.html">Provide Feedback to us</a></td>
+            <td><a href="Virtual Assistant.html">Talk to your Virtual Assistant</a></td>
+
+
+        </table>
+
+    <form>
+        <h2>Name:</h2> 
+        <input type="text"  placeholder="Enter your name">
+        <br><br>
+    
+        <h2>Gender:</h2><h2>
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female
+        <input type="radio" name="Gender">Rather not say
+        <br><br>
+    </h2>
+    
+    <h2>Email Id:</h2>
+        <input type="email" placeholder="(Optional)">
+    <br><br>
+    
+    <h2>
+        Give your Feedback:
+        <input type="text" placeholder="Your Feedback" size="150">
+    </h2>
+    
+    <center><button type="submit">Submit</button></center>
+    <button type="reset">Reset</button>
+    </form>
+
+    <h1><center>Made with  ❤ Eklavya Jain</center></h1>
+
+
+</body>
+</html>
